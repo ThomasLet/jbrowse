@@ -2,9 +2,6 @@ import gff from '@gmod/gff'
 
 define([
            'dojo/_base/declare',
-           'dojo/_base/lang',
-           'dojo/_base/array',
-           'dojo/Deferred',
            'JBrowse/Util',
            'JBrowse/Model/SimpleFeature',
            'JBrowse/Store/SeqFeature',
@@ -16,9 +13,6 @@ define([
        ],
        function(
            declare,
-           lang,
-           array,
-           Deferred,
            Util,
            SimpleFeature,
            SeqFeatureStore,
@@ -27,7 +21,6 @@ define([
            TabixIndexedFile,
            IndexedStatsEstimationMixin,
            XHRBlob,
-           Parser,
        ) {
 
 return declare( [ SeqFeatureStore, DeferredStatsMixin, DeferredFeaturesMixin, IndexedStatsEstimationMixin ],
